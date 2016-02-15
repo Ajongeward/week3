@@ -10,50 +10,64 @@
 
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            $("header").load("include/header.html");
+            $("footer").load("include/footer.html");
+        });
+    </script>
 </head>
 
 <body>
     <header>
+    </header>
+
+    <!-- top part complete dont touch -->
+
+
+    <main>
         <div class="wrapper">
-            <img src="images/eastside_logo.jpg" alt="logo" />
-            <nav id="top-nav">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-            <!-- top part complete dont touch -->
-
-
-
             <h2> Contact us</h2>
             <p> We are here to answer any questions you may have about EastSide Timber & Property Development's expertise. Reach out to us and we will respond as soon as we can.</p>
 
+            <form style="display:none" action="mailto:amanda.jongewaard@gmail.com" method="post">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <input class="form-control" name="email" type="email" id="contact-us-email" placeholder="your email" />
+                            <br>
+                            <input class="form-control" name="name" type="text" placeholder="your name is" />
+                            <br>
+                            <input class="form-control" name="subject" type="text" placeholder="subject" />
+                            <br>
+                            <textarea rows="5" cols="75" name="message" placeholder="tell us about it!"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <br>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
             <h3>Email</h3>
             <ul>
                 <li><a href="https://travel.state.gov/content/passports/en/passports/apply.html">derek@eastsidepropertydevelopment.com</a></li>
+            </ul>
+            <h3>Phone </h3>
+            <p>(425) 269 - 4279</p>
+            <h3>Address</h3>
+            <p> 10435 168th AVE NE
+                <br> Ste #223
+                <br> Redmond, WA 98052</p>
+        </div>
+    </main>
 
-                <h3>Phone </h3>
-                <p>(425)269 - 4279</p>
-                <h3>Address</h3>
-                <p> 10435 168th AVE NE</p>
-                <p>Ste #223
-                    <P>
-                        <p>Redmond, WA 98052</p>
-                        <br>
-                        <h3> People love us on yelp</h3>
-                        <ul>
-                            <li><a href="http://www.yelp.com/biz/eastside-timber-and-property-development-redmond">Yelp</a></li>
+    <footer></footer>
 
 
 </body>

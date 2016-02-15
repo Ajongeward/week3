@@ -10,32 +10,19 @@
 
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            $("header").load("include/header.html");
+            $("footer").load("include/footer.html");
+        });
+    </script>
 </head>
-<div class="wrapper">
-    <img src="images/eastside_logo.jpg" alt="logo" />
-    <nav id="top-nav">
-        <ul>
-
-
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</div>
 
 <body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <header></header>
 
     <main>
 
@@ -45,7 +32,7 @@
             <div class="one_half">
                 <h2>cutuplogs</h2>
                 <img src="images/cutuplogs.jpg" alt="cut up logs" />
-                <P> cut up logs from storm</P>
+                <p> cut up logs from storm</p>
             </div>
             <br>
             <div class="one_half">
@@ -53,27 +40,11 @@
                 <img src="images/ditch_digger.jpg" alt="ditch_digger.jpg" />
                 <p> bla bla blab la blab albblablbllblll</p>
             </div>
-            <div class "one_half">
-                <img src="images/pole_climber.jpg" class=full-width " alt="pole_climber ">
-                                                                                             </div>
-                                                                                            <
-                
-                
-                </div>
+            <div class="one_half">
+                <img src="images/pole_climber.jpg" class=full-width " alt="pole_climber "/>
             </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
     </main>
-    </nav>
+    <footer></footer>
 </body>
 
 </html>
